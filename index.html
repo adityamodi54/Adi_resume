@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: url('pexels-tara-winstead-8386369.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        .header {
+            grid-column: span 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .header-left {
+            display: flex;
+            flex-direction: column;
+        }
+        .header-left h1 {
+            margin: 0;
+        }
+        .header-left p {
+            margin: 5px 0;
+        }
+        .header-right {
+            text-align: right;
+        }
+        .header-right p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .section-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        .education-item, .work-item, .project-item {
+            margin-bottom: 40px;
+            position: relative;
+            padding-left: 60px;
+        }
+        .education-item h3, .work-item h3, .project-item h3 {
+            margin: 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .education-item p, .work-item p, .project-item p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .education-item .courses, .work-item .tasks, .project-item .details {
+            margin-left: 20px;
+            color: #333;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills span {
+            background-color: #007BFF;
+            color: white;
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1.3em;
+            text-align: center;
+            display: inline-block;
+        }
+        .timeline {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            bottom: 20px;
+            width: 2px;
+            background: #007BFF;
+        }
+        .icon {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: #007BFF;
+            border-radius: 50%;
+            position: absolute;
+            left: 33px;
+            top: 0;
+        }
+        .education-item .icon, .work-item .icon {
+            top: 20px;
+        }
+        .work-item:last-child .icon {
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <h1>Aditya Modi</h1>
+                <p>Python programmer with 8+ years of diverse experience, <br> specializing in technical solutions and project leadership.</p>
+            </div>
+            <div class="header-right">
+                <p>adimodi10@gmail.com <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" alt="Email Icon" style="width: 16px; height: 16px; vertical-align: middle;"></p>
+            <!--    <p>647  <img src="https://img.icons8.com/ios-filled/50/000000/phone.png" alt="Phone Icon" style="width: 16px; height: 16px; vertical-align: middle;"></p>  -->
+                <p>Toronto, Canada <img src="https://img.icons8.com/ios-filled/50/000000/marker.png" alt="Location Icon" style="width: 16px; height: 16px; vertical-align: middle;"></p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">WORK EXPERIENCE</div>
+            <div class="timeline"></div>
+            <div class="work-item">
+                <div class="icon"></div>
+                <h3>Bus Sys Analytics Specialist (L-10)</h3>
+                <p>TD Bank Group</p>
+                <p>04/2021 - Present</p>
+                <p>Toronto, Canada</p>
+                <div class="tasks">
+                    <p>Achievements/Tasks:</p>
+                    <ul>
+                        <li>Work independently as the senior and also lead system analyst and guided team.</li>
+                        <li>I have built over 20 dashboards and metrics reports, many of which are used daily by the executive team at TD.</li>
+                        <li>I developed and manage TD's architecture back-end application. This involved collecting requirements, building workflows, automation, and managing the database.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="icon"></div>
+                <h3>Senior IT Developer (L-9)</h3>
+                <p>TD Bank Group</p>
+                <p>05/2019 - 04/2021</p>
+                <p>Toronto, Canada</p>
+                <div class="tasks">
+                    <p>Achievements/Tasks:</p>
+                    <ul>
+                        <li>Automated the bank's mundane processes to achieve seamless transactions across various business segments, including Credit Cards, Wealth, MICS, MOCS, Estates, and more.</li>
+                        <li>Accountable for the effectiveness of technical solutions, ensuring the completeness and quality of system designs and code.</li>
+                        <li>Engage with technical stakeholders to identify application and provisioning requirements, supporting the execution of application provisioning.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="icon"></div>
+                <h3>Software, Machine Learning Engineer</h3>
+                <p>Fortuna.ai</p>
+                <p>09/2018 - 05/2019</p>
+                <div class="tasks">
+                    <p>Achievements/Tasks:</p>
+                    <ul>
+                        <li>Worked with team to design and implement business intelligence tools.</li>
+                        <li>Building reusable code and libraries for future use.</li>
+                        <li>Tech Used: Python, PostgreSQL, Sklearn, Selenium, Django.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work-item">
+                <div class="icon"></div>
+                <h3>Business Dev Manager</h3>
+                <p>Hari Krishna Exports (Hk.co)</p>
+                <p>03/2013 - 05/2017</p>
+                <p>Hong Kong, Mumbai-India</p>
+                <p>Diamond Manufacturer and Sight Holder</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">PERSONAL PROJECTS</div>
+            <div class="project-item">
+                <h3>Gen AI - Chat with your own data (03/2024 - Present)</h3>
+                <div class="details">
+                    <p>Don't have time to read the documents? Let my app do it for you! Developed an interactive web app for extracting text from various document formats and answering questions using Open AI's GPT-3.5-turbo. The app includes security and usage management, allowing up to 20 requests per day, demonstrating expertise in web development, AI integration, and secure API usage. <a href="https://chatwithyourdataa.streamlit.app/">Link to the app</a>.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Personal Expense Tracker (01/2024 - Present)</h3>
+                <div class="details">
+                    <p>Feel free to use it! I've created a tracker to manage the finances of my family and me. Your feedback and suggestions are welcome. <a href="https://streamtrack.streamlit.app/">Link to Tracker</a> (id: user, pass: test).</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>AML Analysis with LLM GPT-2 (10/2023 - Present)</h3>
+                <div class="details">
+                    <p>Built this on pandas and Hugging Face's LLM GPT-2, analyzes your transactions in real-time, detecting suspicious activity based on AML criteria like large sums, frequent activity, and international transfers. Instantly view and download detailed results with my user-friendly interface. <a href="https://amlsuspicioustransactions.streamlit.app/">Link to app</a>.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Django-based Alerting System (08/2023 - Present)</h3>
+                <div class="details">
+                    <p>Stay ahead with my Crypto Alert System! Get instant notifications for BTC, ETH price changes by 5-10%, with 1-hour, 24-hour, and 7-day alerts. It's user-friendly for all traders and enthusiasts. Don't miss out – <a href="https://django-cryp-price-git-main-ams-projects-71636113.vercel.app">Link to Django Versel app</a> to master your crypto strategy today!</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Tableau Projects (03/2019 - Present)</h3>
+                <div class="details">
+                    <p><a href="https://public.tableau.com/app/profile/aditya1784/vizzes">Link to Dashboards</a>. I have extensive experience in data manipulation and creating new dashboards using various databases.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <h3>Advanced Data Visualization on over 400,000 Kickstarter Companies (02/2018 - 04/2018)</h3>
+                <div class="details">
+                    <p>Ratio of successful vs failed companies on Kickstarter, state of Kickstarter over years etc. <a href="https://github.com/adityamodi54/Kickstarter_Project/tree/master">Link to the project</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            <div class="timeline"></div>
+            <div class="education-item">
+                <div class="icon"></div>
+                <h3>Masters of Engineering Innovation and E'neur - Data Science and Analytics</h3>
+                <p>Ryerson University (3.8/4)</p>
+                <p>06/2017 - 06/2019</p>
+                <p>Toronto, Canada</p>
+                <div class="courses">
+                    <p>Courses:</p>
+                    <ul>
+                        <li>Deep Learning</li>
+                        <li>Machine Learning</li>
+                        <li>Management of Big Data and Tools</li>
+                        <li>Reinforcement Learning</li>
+                        <li>Advanced Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education-item">
+                <div class="icon"></div>
+                <h3>Bachelor of Technology (BTech) - Information Technology</h3>
+                <p>NMIMS University</p>
+                <p>08/2010 - 08/2014</p>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">SKILLS</div>
+            <div class="skills">
+                <span>Python</span>
+                <span>Power Platform - Power Apps</span>
+                <span>Power Automate</span>
+                <span>Tableau</span>
+                <span>Power BI</span>
+                <span>Lib: Pandas, Numpy, Matplotlib</span>
+                <span>RPA</span>
+                <span>Blue Prism</span>
+                <span>LLM</span>
+                <span>Gen AI</span>
+                <span>Hugging face</span>
+                <span>Python-Django</span>
+                <span>Streamlit</span>
+                <span>Tensorflow</span>
+                <span>Scikit-learn</span>
+                <span>Mongo db</span>
+                <span>Vector db</span>
+                <span>Hadoop</span>
+                <span>SQLite</span>
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>JavaScript</span>
+                <span>Excel</span>
+                <span>Html/CSS</span>
+                <span>Sharepoint</span>
+                <span>Agile</span>
+                <span>Jira</span>
+                <span>Confluence</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
